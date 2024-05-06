@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/WatchflixDeploy/static/css/main.18b7f377.css",
+    "main.js": "/WatchflixDeploy/static/js/main.cc716de7.js",
+    "static/media/ded.jpeg": "/WatchflixDeploy/static/media/ded.9c0d161ce1b601f515fb.jpeg",
+    "static/media/avatar.webp": "/WatchflixDeploy/static/media/avatar.5cdd57fe232e877acd54.webp",
+    "index.html": "/WatchflixDeploy/index.html",
+    "main.18b7f377.css.map": "/WatchflixDeploy/static/css/main.18b7f377.css.map",
+    "main.cc716de7.js.map": "/WatchflixDeploy/static/js/main.cc716de7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.18b7f377.css",
+    "static/js/main.cc716de7.js"
+  ]
+}
