@@ -56,16 +56,16 @@ export default function Poster() {
         setIndex(index);
     }
     return (
-        <div className="h-screen bg-center bg-cover items-end" style={{backgroundImage: `url("https://image.tmdb.org/t/p/original${movies[index].backdrop_path}")`}}>
-            <div className='h-screen bg-gradient-to-b from-[#000000b5] from-10% via-transparent via-50% to-black to-80%'>
+        <div className="h-screen bg-center max-sm:w-[640px] bg-cover items-end" style={{backgroundImage: `url("https://image.tmdb.org/t/p/original${movies[index].backdrop_path}")`}}>
+            <div className='h-full bg-gradient-to-b from-[#000000b5] from-10% via-transparent via-50% to-black to-80%'>
                 <div className='max-w-screen-2xl mx-auto flex flex-col h-screen justify-between'>
 
-                    <div className='mt-28'>
+                    <div className=' ml-12 mt-28'>
                         <div className=''>
                             <span className='text-4xl md:text-7xl '>
                                 {movies[index].title}
                             </span>
-                             <p className='max-w-2xl mt-8 text-slate-300'>
+                             <p className='max-w-2xl mt-8 max-sm:w-[500px] text-slate-300'>
                                 {movies[index].overview}
                             </p>
                             
@@ -90,7 +90,7 @@ export default function Poster() {
                     </div>
 
                     <div className=''>
-                        <div className='text-4xl mb-6'>Now Popular:</div>
+                        <div className='text-4xl mb-6 max-sm:pb-6'>Now Popular:</div>
                         <Swiper
                             slidesPerView={4}
                             spaceBetween={30}
@@ -98,7 +98,7 @@ export default function Poster() {
                             navigation={true}
                             modules={[Navigation]}
                             pagination={false}
-                            className="mx-auto flex flex-row relative w-full p-6"
+                            className="mx-auto max-sm:h-[26] flex flex-row relative w-full p-6"
                             breakpoints={{
                                 320: {
                                 slidesPerView: 1,
